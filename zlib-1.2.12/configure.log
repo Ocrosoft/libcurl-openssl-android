@@ -1,0 +1,1161 @@
+--------------------
+./configure --prefix=/mnt/e/repos/curl-android/zlib-1.2.12/out --static
+Fri Jul  8 17:02:25 CST 2022
+Using /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-ar
+Using /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-ranlib
+Using /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-nm
+=== ztest7497.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+-c ztest7497.c
+... using /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc
+
+Checking for obsessive-compulsive compiler options...
+=== ztest7497.c ===
+int foo() { return 0; }
+===
+/mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -c -O ztest7497.c
+
+Building static library libz.a version 1.2.12 with /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc.
+
+=== ztest7497.c ===
+#include <stdio.h>
+#include <stdlib.h>
+size_t dummy = 0;
+===
+/mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -c -O ztest7497.c
+Checking for size_t... Yes.
+
+=== ztest7497.c ===
+#include <sys/types.h>
+off64_t dummy = 0;
+===
+/mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -c -O -D_LARGEFILE64_SOURCE=1 ztest7497.c
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+
+=== ztest7497.c ===
+#include <string.h>
+#include <errno.h>
+int main() { return strlen(strerror(errno)); }
+===
+/mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -O -D_LARGEFILE64_SOURCE=1 -o ztest7497 ztest7497.c
+Checking for strerror... Yes.
+
+=== ztest7497.c ===
+#include <unistd.h>
+int main() { return 0; }
+===
+/mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -c -O -D_LARGEFILE64_SOURCE=1 ztest7497.c
+Checking for unistd.h... Yes.
+
+=== ztest7497.c ===
+#include <stdarg.h>
+int main() { return 0; }
+===
+/mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -c -O -D_LARGEFILE64_SOURCE=1 ztest7497.c
+Checking for stdarg.h... Yes.
+
+=== ztest7497.c ===
+#include <stdio.h>
+#include <stdarg.h>
+#include "zconf.h"
+int main()
+{
+#ifndef STDC
+  choke me
+#endif
+  return 0;
+}
+===
+/mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -c -O -D_LARGEFILE64_SOURCE=1 ztest7497.c
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+
+=== ztest7497.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return 0;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+/mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -O -D_LARGEFILE64_SOURCE=1 -o ztest7497 ztest7497.c
+Checking for vsnprintf() in stdio.h... Yes.
+
+=== ztest7497.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  int n;
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  n = vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return n;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+/mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -c -O -D_LARGEFILE64_SOURCE=1 ztest7497.c
+Checking for return value of vsnprintf()... Yes.
+
+ALL = static all64
+AR = /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-ar
+ARFLAGS = rc
+CC = /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc
+CFLAGS = -O -D_LARGEFILE64_SOURCE=1
+CPP = /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -E
+EXE =
+LDCONFIG = ldconfig
+LDFLAGS =
+LDSHARED = /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc
+LDSHAREDLIBC = -lc
+OBJC = $(OBJZ) $(OBJG)
+PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
+RANLIB = /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-ranlib
+SFLAGS = -O -D_LARGEFILE64_SOURCE=1
+SHAREDLIB =
+SHAREDLIBM =
+SHAREDLIBV =
+STATICLIB = libz.a
+TEST = all teststatic test64
+VER = 1.2.12
+SRCDIR =
+exec_prefix = ${prefix}
+includedir = ${prefix}/include
+libdir = ${exec_prefix}/lib
+mandir = ${prefix}/share/man
+prefix = /mnt/e/repos/curl-android/zlib-1.2.12/out
+sharedlibdir = ${libdir}
+uname = ios/toolchain/bin/arm
+--------------------
+
+
+--------------------
+./configure --prefix=/mnt/e/repos/curl-android/zlib-1.2.12/out --static
+Fri Jul  8 17:06:09 CST 2022
+Using /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-ar
+Using /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-ranlib
+Using /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-nm
+=== ztest7665.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+-c ztest7665.c
+... using /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc
+
+Checking for obsessive-compulsive compiler options...
+=== ztest7665.c ===
+int foo() { return 0; }
+===
+/mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -c -O ztest7665.c
+
+Building static library libz.a version 1.2.12 with /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc.
+
+=== ztest7665.c ===
+#include <stdio.h>
+#include <stdlib.h>
+size_t dummy = 0;
+===
+/mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -c -O ztest7665.c
+Checking for size_t... Yes.
+
+=== ztest7665.c ===
+#include <sys/types.h>
+off64_t dummy = 0;
+===
+/mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -c -O -D_LARGEFILE64_SOURCE=1 ztest7665.c
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+
+=== ztest7665.c ===
+#include <string.h>
+#include <errno.h>
+int main() { return strlen(strerror(errno)); }
+===
+/mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -O -D_LARGEFILE64_SOURCE=1 -o ztest7665 ztest7665.c
+Checking for strerror... Yes.
+
+=== ztest7665.c ===
+#include <unistd.h>
+int main() { return 0; }
+===
+/mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -c -O -D_LARGEFILE64_SOURCE=1 ztest7665.c
+Checking for unistd.h... Yes.
+
+=== ztest7665.c ===
+#include <stdarg.h>
+int main() { return 0; }
+===
+/mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -c -O -D_LARGEFILE64_SOURCE=1 ztest7665.c
+Checking for stdarg.h... Yes.
+
+=== ztest7665.c ===
+#include <stdio.h>
+#include <stdarg.h>
+#include "zconf.h"
+int main()
+{
+#ifndef STDC
+  choke me
+#endif
+  return 0;
+}
+===
+/mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -c -O -D_LARGEFILE64_SOURCE=1 ztest7665.c
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+
+=== ztest7665.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return 0;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+/mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -O -D_LARGEFILE64_SOURCE=1 -o ztest7665 ztest7665.c
+Checking for vsnprintf() in stdio.h... Yes.
+
+=== ztest7665.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  int n;
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  n = vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return n;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+/mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -c -O -D_LARGEFILE64_SOURCE=1 ztest7665.c
+Checking for return value of vsnprintf()... Yes.
+
+ALL = static all64
+AR = /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-ar
+ARFLAGS = rc
+CC = /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc
+CFLAGS = -O -D_LARGEFILE64_SOURCE=1
+CPP = /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc -E
+EXE =
+LDCONFIG = ldconfig
+LDFLAGS =
+LDSHARED = /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-gcc
+LDSHAREDLIBC = -lc
+OBJC = $(OBJZ) $(OBJG)
+PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
+RANLIB = /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-ranlib
+SFLAGS = -O -D_LARGEFILE64_SOURCE=1
+SHAREDLIB =
+SHAREDLIBM =
+SHAREDLIBV =
+STATICLIB = libz.a
+TEST = all teststatic test64
+VER = 1.2.12
+SRCDIR =
+exec_prefix = ${prefix}
+includedir = ${prefix}/include
+libdir = ${exec_prefix}/lib
+mandir = ${prefix}/share/man
+prefix = /mnt/e/repos/curl-android/zlib-1.2.12/out
+sharedlibdir = ${libdir}
+uname = ios/toolchain/bin/arm
+--------------------
+
+
+--------------------
+./configure --prefix=/mnt/e/repos/curl-android/zlib-1.2.12/out --static
+Fri Jul  8 17:17:07 CST 2022
+Using /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
+Using /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib
+Using /mnt/e/repos/curl-android-ios/toolchain/bin/arm-linux-androideabi-nm
+=== ztest7890.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+-c ztest7890.c
+... using /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+
+Checking for obsessive-compulsive compiler options...
+=== ztest7890.c ===
+int foo() { return 0; }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O ztest7890.c
+
+Building static library libz.a version 1.2.12 with /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang.
+
+=== ztest7890.c ===
+#include <stdio.h>
+#include <stdlib.h>
+size_t dummy = 0;
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O ztest7890.c
+Checking for size_t... Yes.
+
+=== ztest7890.c ===
+#include <sys/types.h>
+off64_t dummy = 0;
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest7890.c
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+
+=== ztest7890.c ===
+#include <string.h>
+#include <errno.h>
+int main() { return strlen(strerror(errno)); }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -O -D_LARGEFILE64_SOURCE=1 -o ztest7890 ztest7890.c
+Checking for strerror... Yes.
+
+=== ztest7890.c ===
+#include <unistd.h>
+int main() { return 0; }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest7890.c
+Checking for unistd.h... Yes.
+
+=== ztest7890.c ===
+#include <stdarg.h>
+int main() { return 0; }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest7890.c
+Checking for stdarg.h... Yes.
+
+=== ztest7890.c ===
+#include <stdio.h>
+#include <stdarg.h>
+#include "zconf.h"
+int main()
+{
+#ifndef STDC
+  choke me
+#endif
+  return 0;
+}
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest7890.c
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+
+=== ztest7890.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return 0;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -O -D_LARGEFILE64_SOURCE=1 -o ztest7890 ztest7890.c
+Checking for vsnprintf() in stdio.h... Yes.
+
+=== ztest7890.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  int n;
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  n = vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return n;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest7890.c
+Checking for return value of vsnprintf()... Yes.
+
+ALL = static all64
+AR = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
+ARFLAGS = rc
+CC = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+CFLAGS = -O -D_LARGEFILE64_SOURCE=1
+CPP = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -E
+EXE =
+LDCONFIG = ldconfig
+LDFLAGS =
+LDSHARED = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+LDSHAREDLIBC = -lc
+OBJC = $(OBJZ) $(OBJG)
+PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
+RANLIB = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib
+SFLAGS = -O -D_LARGEFILE64_SOURCE=1
+SHAREDLIB =
+SHAREDLIBM =
+SHAREDLIBV =
+STATICLIB = libz.a
+TEST = all teststatic test64
+VER = 1.2.12
+SRCDIR =
+exec_prefix = ${prefix}
+includedir = ${prefix}/include
+libdir = ${exec_prefix}/lib
+mandir = ${prefix}/share/man
+prefix = /mnt/e/repos/curl-android/zlib-1.2.12/out
+sharedlibdir = ${libdir}
+uname = ios/toolchain/bin/arm
+--------------------
+
+
+--------------------
+./configure --prefix=/mnt/e/repos/curl-android/zlib-1.2.12/out/arm64 --static
+Fri Jul  8 17:51:43 CST 2022
+=== ztest23938.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+-c ztest23938.c
+... using /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+
+Checking for obsessive-compulsive compiler options...
+=== ztest23938.c ===
+int foo() { return 0; }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O ztest23938.c
+
+Building static library libz.a version 1.2.12 with /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang.
+
+=== ztest23938.c ===
+#include <stdio.h>
+#include <stdlib.h>
+size_t dummy = 0;
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O ztest23938.c
+Checking for size_t... Yes.
+
+=== ztest23938.c ===
+#include <sys/types.h>
+off64_t dummy = 0;
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest23938.c
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+
+=== ztest23938.c ===
+#include <string.h>
+#include <errno.h>
+int main() { return strlen(strerror(errno)); }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -O -D_LARGEFILE64_SOURCE=1 -o ztest23938 ztest23938.c
+Checking for strerror... Yes.
+
+=== ztest23938.c ===
+#include <unistd.h>
+int main() { return 0; }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest23938.c
+Checking for unistd.h... Yes.
+
+=== ztest23938.c ===
+#include <stdarg.h>
+int main() { return 0; }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest23938.c
+Checking for stdarg.h... Yes.
+
+=== ztest23938.c ===
+#include <stdio.h>
+#include <stdarg.h>
+#include "zconf.h"
+int main()
+{
+#ifndef STDC
+  choke me
+#endif
+  return 0;
+}
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest23938.c
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+
+=== ztest23938.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return 0;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -O -D_LARGEFILE64_SOURCE=1 -o ztest23938 ztest23938.c
+Checking for vsnprintf() in stdio.h... Yes.
+
+=== ztest23938.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  int n;
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  n = vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return n;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest23938.c
+Checking for return value of vsnprintf()... Yes.
+
+ALL = static all64
+AR = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
+ARFLAGS = rc
+CC = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+CFLAGS = -O -D_LARGEFILE64_SOURCE=1
+CPP = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -E
+EXE =
+LDCONFIG = ldconfig
+LDFLAGS =
+LDSHARED = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+LDSHAREDLIBC = -lc
+OBJC = $(OBJZ) $(OBJG)
+PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
+RANLIB = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib
+SFLAGS = -O -D_LARGEFILE64_SOURCE=1
+SHAREDLIB =
+SHAREDLIBM =
+SHAREDLIBV =
+STATICLIB = libz.a
+TEST = all teststatic test64
+VER = 1.2.12
+SRCDIR =
+exec_prefix = ${prefix}
+includedir = ${prefix}/include
+libdir = ${exec_prefix}/lib
+mandir = ${prefix}/share/man
+prefix = /mnt/e/repos/curl-android/zlib-1.2.12/out/arm64
+sharedlibdir = ${libdir}
+uname = Linux 5.10.16.3-microsoft-standard-WSL2
+--------------------
+
+
+--------------------
+./configure --prefix=/mnt/e/repos/curl-android/zlib-1.2.12/out/arm64 --static
+Fri Jul  8 17:54:19 CST 2022
+=== ztest24686.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+-c ztest24686.c
+... using /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+
+Checking for obsessive-compulsive compiler options...
+=== ztest24686.c ===
+int foo() { return 0; }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O ztest24686.c
+
+Building static library libz.a version 1.2.12 with /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang.
+
+=== ztest24686.c ===
+#include <stdio.h>
+#include <stdlib.h>
+size_t dummy = 0;
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O ztest24686.c
+Checking for size_t... Yes.
+
+=== ztest24686.c ===
+#include <sys/types.h>
+off64_t dummy = 0;
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest24686.c
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+
+=== ztest24686.c ===
+#include <string.h>
+#include <errno.h>
+int main() { return strlen(strerror(errno)); }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -O -D_LARGEFILE64_SOURCE=1 -o ztest24686 ztest24686.c
+Checking for strerror... Yes.
+
+=== ztest24686.c ===
+#include <unistd.h>
+int main() { return 0; }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest24686.c
+Checking for unistd.h... Yes.
+
+=== ztest24686.c ===
+#include <stdarg.h>
+int main() { return 0; }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest24686.c
+Checking for stdarg.h... Yes.
+
+=== ztest24686.c ===
+#include <stdio.h>
+#include <stdarg.h>
+#include "zconf.h"
+int main()
+{
+#ifndef STDC
+  choke me
+#endif
+  return 0;
+}
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest24686.c
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+
+=== ztest24686.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return 0;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -O -D_LARGEFILE64_SOURCE=1 -o ztest24686 ztest24686.c
+Checking for vsnprintf() in stdio.h... Yes.
+
+=== ztest24686.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  int n;
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  n = vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return n;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest24686.c
+Checking for return value of vsnprintf()... Yes.
+
+ALL = static all64
+AR = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
+ARFLAGS = rc
+CC = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+CFLAGS = -O -D_LARGEFILE64_SOURCE=1
+CPP = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -E
+EXE =
+LDCONFIG = ldconfig
+LDFLAGS =
+LDSHARED = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+LDSHAREDLIBC = -lc
+OBJC = $(OBJZ) $(OBJG)
+PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
+RANLIB = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib
+SFLAGS = -O -D_LARGEFILE64_SOURCE=1
+SHAREDLIB =
+SHAREDLIBM =
+SHAREDLIBV =
+STATICLIB = libz.a
+TEST = all teststatic test64
+VER = 1.2.12
+SRCDIR =
+exec_prefix = ${prefix}
+includedir = ${prefix}/include
+libdir = ${exec_prefix}/lib
+mandir = ${prefix}/share/man
+prefix = /mnt/e/repos/curl-android/zlib-1.2.12/out/arm64
+sharedlibdir = ${libdir}
+uname = Linux 5.10.16.3-microsoft-standard-WSL2
+--------------------
+
+
+--------------------
+./configure --prefix=/mnt/e/repos/curl-android/zlib-1.2.12/out/arm64 --static
+Fri Jul  8 20:16:31 CST 2022
+=== ztest11769.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+-c ztest11769.c
+... using /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+
+Checking for obsessive-compulsive compiler options...
+=== ztest11769.c ===
+int foo() { return 0; }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O ztest11769.c
+
+Building static library libz.a version 1.2.12 with /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang.
+
+=== ztest11769.c ===
+#include <stdio.h>
+#include <stdlib.h>
+size_t dummy = 0;
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O ztest11769.c
+Checking for size_t... Yes.
+
+=== ztest11769.c ===
+#include <sys/types.h>
+off64_t dummy = 0;
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest11769.c
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+
+=== ztest11769.c ===
+#include <string.h>
+#include <errno.h>
+int main() { return strlen(strerror(errno)); }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -O -D_LARGEFILE64_SOURCE=1 -o ztest11769 ztest11769.c
+Checking for strerror... Yes.
+
+=== ztest11769.c ===
+#include <unistd.h>
+int main() { return 0; }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest11769.c
+Checking for unistd.h... Yes.
+
+=== ztest11769.c ===
+#include <stdarg.h>
+int main() { return 0; }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest11769.c
+Checking for stdarg.h... Yes.
+
+=== ztest11769.c ===
+#include <stdio.h>
+#include <stdarg.h>
+#include "zconf.h"
+int main()
+{
+#ifndef STDC
+  choke me
+#endif
+  return 0;
+}
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest11769.c
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+
+=== ztest11769.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return 0;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -O -D_LARGEFILE64_SOURCE=1 -o ztest11769 ztest11769.c
+Checking for vsnprintf() in stdio.h... Yes.
+
+=== ztest11769.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  int n;
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  n = vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return n;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest11769.c
+Checking for return value of vsnprintf()... Yes.
+
+ALL = static all64
+AR = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
+ARFLAGS = rc
+CC = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+CFLAGS = -O -D_LARGEFILE64_SOURCE=1
+CPP = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -E
+EXE =
+LDCONFIG = ldconfig
+LDFLAGS =
+LDSHARED = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+LDSHAREDLIBC = -lc
+OBJC = $(OBJZ) $(OBJG)
+PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
+RANLIB = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib
+SFLAGS = -O -D_LARGEFILE64_SOURCE=1
+SHAREDLIB =
+SHAREDLIBM =
+SHAREDLIBV =
+STATICLIB = libz.a
+TEST = all teststatic test64
+VER = 1.2.12
+SRCDIR =
+exec_prefix = ${prefix}
+includedir = ${prefix}/include
+libdir = ${exec_prefix}/lib
+mandir = ${prefix}/share/man
+prefix = /mnt/e/repos/curl-android/zlib-1.2.12/out/arm64
+sharedlibdir = ${libdir}
+uname = Linux 5.10.16.3-microsoft-standard-WSL2
+--------------------
+
+
+--------------------
+./configure --prefix=/mnt/e/repos/curl-android/zlib-1.2.12/out/arm64 --static
+Fri Jul  8 20:42:12 CST 2022
+=== ztest4504.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+-c ztest4504.c
+... using /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+
+Checking for obsessive-compulsive compiler options...
+=== ztest4504.c ===
+int foo() { return 0; }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O ztest4504.c
+
+Building static library libz.a version 1.2.12 with /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang.
+
+=== ztest4504.c ===
+#include <stdio.h>
+#include <stdlib.h>
+size_t dummy = 0;
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O ztest4504.c
+Checking for size_t... Yes.
+
+=== ztest4504.c ===
+#include <sys/types.h>
+off64_t dummy = 0;
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest4504.c
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+
+=== ztest4504.c ===
+#include <string.h>
+#include <errno.h>
+int main() { return strlen(strerror(errno)); }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -O -D_LARGEFILE64_SOURCE=1 -o ztest4504 ztest4504.c
+Checking for strerror... Yes.
+
+=== ztest4504.c ===
+#include <unistd.h>
+int main() { return 0; }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest4504.c
+Checking for unistd.h... Yes.
+
+=== ztest4504.c ===
+#include <stdarg.h>
+int main() { return 0; }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest4504.c
+Checking for stdarg.h... Yes.
+
+=== ztest4504.c ===
+#include <stdio.h>
+#include <stdarg.h>
+#include "zconf.h"
+int main()
+{
+#ifndef STDC
+  choke me
+#endif
+  return 0;
+}
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest4504.c
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+
+=== ztest4504.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return 0;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -O -D_LARGEFILE64_SOURCE=1 -o ztest4504 ztest4504.c
+Checking for vsnprintf() in stdio.h... Yes.
+
+=== ztest4504.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  int n;
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  n = vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return n;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest4504.c
+Checking for return value of vsnprintf()... Yes.
+
+ALL = static all64
+AR = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
+ARFLAGS = rc
+CC = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+CFLAGS = -O -D_LARGEFILE64_SOURCE=1
+CPP = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -E
+EXE =
+LDCONFIG = ldconfig
+LDFLAGS =
+LDSHARED = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+LDSHAREDLIBC = -lc
+OBJC = $(OBJZ) $(OBJG)
+PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
+RANLIB = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib
+SFLAGS = -O -D_LARGEFILE64_SOURCE=1
+SHAREDLIB =
+SHAREDLIBM =
+SHAREDLIBV =
+STATICLIB = libz.a
+TEST = all teststatic test64
+VER = 1.2.12
+SRCDIR =
+exec_prefix = ${prefix}
+includedir = ${prefix}/include
+libdir = ${exec_prefix}/lib
+mandir = ${prefix}/share/man
+prefix = /mnt/e/repos/curl-android/zlib-1.2.12/out/arm64
+sharedlibdir = ${libdir}
+uname = Linux 5.10.16.3-microsoft-standard-WSL2
+--------------------
+
+
+--------------------
+./configure --prefix=/mnt/e/repos/curl-android/zlib-1.2.12/out/arm64 --static
+Fri Jul  8 23:34:54 CST 2022
+=== ztest28555.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+-c ztest28555.c
+... using /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+
+Checking for obsessive-compulsive compiler options...
+=== ztest28555.c ===
+int foo() { return 0; }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O ztest28555.c
+
+Building static library libz.a version 1.2.12 with /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang.
+
+=== ztest28555.c ===
+#include <stdio.h>
+#include <stdlib.h>
+size_t dummy = 0;
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O ztest28555.c
+Checking for size_t... Yes.
+
+=== ztest28555.c ===
+#include <sys/types.h>
+off64_t dummy = 0;
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest28555.c
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+
+=== ztest28555.c ===
+#include <string.h>
+#include <errno.h>
+int main() { return strlen(strerror(errno)); }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -O -D_LARGEFILE64_SOURCE=1 -o ztest28555 ztest28555.c
+Checking for strerror... Yes.
+
+=== ztest28555.c ===
+#include <unistd.h>
+int main() { return 0; }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest28555.c
+Checking for unistd.h... Yes.
+
+=== ztest28555.c ===
+#include <stdarg.h>
+int main() { return 0; }
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest28555.c
+Checking for stdarg.h... Yes.
+
+=== ztest28555.c ===
+#include <stdio.h>
+#include <stdarg.h>
+#include "zconf.h"
+int main()
+{
+#ifndef STDC
+  choke me
+#endif
+  return 0;
+}
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest28555.c
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+
+=== ztest28555.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return 0;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -O -D_LARGEFILE64_SOURCE=1 -o ztest28555 ztest28555.c
+Checking for vsnprintf() in stdio.h... Yes.
+
+=== ztest28555.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  int n;
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  n = vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return n;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -c -O -D_LARGEFILE64_SOURCE=1 ztest28555.c
+Checking for return value of vsnprintf()... Yes.
+
+ALL = static all64
+AR = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar
+ARFLAGS = rc
+CC = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+CFLAGS = -O -D_LARGEFILE64_SOURCE=1
+CPP = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang -E
+EXE =
+LDCONFIG = ldconfig
+LDFLAGS =
+LDSHARED = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang
+LDSHAREDLIBC = -lc
+OBJC = $(OBJZ) $(OBJG)
+PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
+RANLIB = /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib
+SFLAGS = -O -D_LARGEFILE64_SOURCE=1
+SHAREDLIB =
+SHAREDLIBM =
+SHAREDLIBV =
+STATICLIB = libz.a
+TEST = all teststatic test64
+VER = 1.2.12
+SRCDIR =
+exec_prefix = ${prefix}
+includedir = ${prefix}/include
+libdir = ${exec_prefix}/lib
+mandir = ${prefix}/share/man
+prefix = /mnt/e/repos/curl-android/zlib-1.2.12/out/arm64
+sharedlibdir = ${libdir}
+uname = Linux 5.10.16.3-microsoft-standard-WSL2
+--------------------
+
+

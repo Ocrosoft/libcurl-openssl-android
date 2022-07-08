@@ -1,0 +1,486 @@
+libcurl_la-hostip.lo: hostip.c ../lib/curl_setup.h ../lib/curl_config.h \
+  ../include/curl/curl.h ../include/curl/curlver.h \
+  ../include/curl/system.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/types.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/12.0.9/include/stddef.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/12.0.9/include/__stddef_max_align_t.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/12.0.9/include/stdint.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/stdint.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/wchar_limits.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/cdefs.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/versioning.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/api-level.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/get_device_api_level_inlines.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/ndk-version.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/types.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/types.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/types.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/int-ll64.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/bitsperlong.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/bitsperlong.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/posix_types.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/stddef.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/compiler_types.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/compiler.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/posix_types.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/posix_types.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/pthread_types.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/socket.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/fcntl.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/fcntl.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/flock64.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/flock.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/socket.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/socket.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/sockios.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/sockios.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/sockios.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/uio.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/sa_family_t.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/stdio.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/12.0.9/include/stdarg.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/seek_constants.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/struct_file.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/12.0.9/include/limits.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/limits.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/12.0.9/include/float.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/limits.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/posix_limits.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/time.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/time.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/time.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/time_types.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/select.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/signal.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/sigcontext.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/sve_context.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/signal_types.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/signal.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/signal.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/signal.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/signal-defs.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/siginfo.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/siginfo.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/timespec.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/ucontext.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/user.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/legacy_signal_inlines.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/xlocale.h \
+  ../include/curl/easy.h ../include/curl/multi.h \
+  ../include/curl/urlapi.h ../include/curl/options.h \
+  ../include/curl/header.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/assert.h \
+  ../lib/curl_setup_once.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/local/include/stdlib.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/stdlib.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/alloca.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/wait.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/wait.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/malloc.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/legacy_stdlib_inlines.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/string.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/strcasecmp.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/ctype.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/ctype_inlines.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/errno.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/errno.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/errno.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/errno.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/errno-base.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/legacy_errno_inlines.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/stat.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/stat.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/legacy_sys_stat_inlines.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/12.0.9/include/stdbool.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/unistd.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/fcntl.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/getopt.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/ioctl.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/lockf.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/sysconf.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/legacy_unistd_inlines.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/swab.h \
+  ../lib/curl_ctype.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/netinet/in.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/endian.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/endian.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/netinet/in6.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/in6.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/libc-compat.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/socket.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/in.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/ip_msfilter.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/in_addr.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/ip_mreq_source.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/byteorder.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/byteorder/little_endian.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/swab.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/swab.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/swab.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/ipv6.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/netdb.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/arpa/inet.h \
+  /mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/setjmp.h \
+  ../lib/urldata.h ../lib/cookie.h ../lib/psl.h ../lib/formdata.h \
+  ../lib/timeval.h ../lib/timediff.h ../lib/http_chunks.h \
+  ../lib/hostip.h ../lib/hash.h ../lib/llist.h ../lib/curl_addrinfo.h \
+  ../lib/asyn.h ../lib/splay.h ../lib/dynbuf.h ../lib/mime.h \
+  ../lib/imap.h ../lib/pingpong.h ../lib/curl_sasl.h ../lib/bufref.h \
+  ../lib/pop3.h ../lib/smtp.h ../lib/ftp.h ../lib/file.h \
+  ../lib/vssh/ssh.h ../lib/http.h ../lib/rtsp.h ../lib/smb.h \
+  ../lib/mqtt.h ../lib/wildcard.h ../lib/multihandle.h \
+  ../lib/conncache.h ../lib/socketpair.h ../lib/quic.h ../lib/c-hyper.h \
+  ../lib/sendf.h ../lib/rand.h ../lib/share.h ../lib/url.h \
+  ../lib/inet_ntop.h ../lib/inet_pton.h ../lib/multiif.h ../lib/doh.h \
+  ../lib/warnless.h ../lib/strcase.h ../lib/curl_printf.h \
+  ../include/curl/mprintf.h ../lib/curl_memory.h ../lib/memdebug.h
+
+../lib/curl_setup.h:
+
+../lib/curl_config.h:
+
+../include/curl/curl.h:
+
+../include/curl/curlver.h:
+
+../include/curl/system.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/types.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/12.0.9/include/stddef.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/12.0.9/include/__stddef_max_align_t.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/12.0.9/include/stdint.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/stdint.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/wchar_limits.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/cdefs.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/versioning.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/api-level.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/get_device_api_level_inlines.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/ndk-version.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/types.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/types.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/types.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/int-ll64.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/bitsperlong.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/bitsperlong.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/posix_types.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/stddef.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/compiler_types.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/compiler.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/posix_types.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/posix_types.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/pthread_types.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/socket.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/fcntl.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/fcntl.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/flock64.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/flock.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/socket.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/socket.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/sockios.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/sockios.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/sockios.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/uio.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/sa_family_t.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/stdio.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/12.0.9/include/stdarg.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/seek_constants.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/struct_file.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/12.0.9/include/limits.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/limits.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/12.0.9/include/float.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/limits.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/posix_limits.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/time.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/time.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/time.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/time_types.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/select.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/signal.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/sigcontext.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/sve_context.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/signal_types.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/signal.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/signal.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/signal.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/signal-defs.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/siginfo.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/siginfo.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/timespec.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/ucontext.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/user.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/legacy_signal_inlines.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/xlocale.h:
+
+../include/curl/easy.h:
+
+../include/curl/multi.h:
+
+../include/curl/urlapi.h:
+
+../include/curl/options.h:
+
+../include/curl/header.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/assert.h:
+
+../lib/curl_setup_once.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/local/include/stdlib.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/stdlib.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/alloca.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/wait.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/wait.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/malloc.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/legacy_stdlib_inlines.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/string.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/strcasecmp.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/ctype.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/ctype_inlines.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/errno.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/errno.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/errno.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/errno.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/errno-base.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/legacy_errno_inlines.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/stat.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/stat.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/legacy_sys_stat_inlines.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/12.0.9/include/stdbool.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/unistd.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/fcntl.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/getopt.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/ioctl.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/lockf.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/sysconf.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/legacy_unistd_inlines.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/swab.h:
+
+../lib/curl_ctype.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/netinet/in.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/endian.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/endian.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/netinet/in6.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/in6.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/libc-compat.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/socket.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/in.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/ip_msfilter.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/in_addr.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/ip_mreq_source.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/byteorder.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/byteorder/little_endian.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/swab.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/aarch64-linux-android/asm/swab.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/asm-generic/swab.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/ipv6.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/netdb.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/arpa/inet.h:
+
+/mnt/e/repos/android-ndk-r23c-linux/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/setjmp.h:
+
+../lib/urldata.h:
+
+../lib/cookie.h:
+
+../lib/psl.h:
+
+../lib/formdata.h:
+
+../lib/timeval.h:
+
+../lib/timediff.h:
+
+../lib/http_chunks.h:
+
+../lib/hostip.h:
+
+../lib/hash.h:
+
+../lib/llist.h:
+
+../lib/curl_addrinfo.h:
+
+../lib/asyn.h:
+
+../lib/splay.h:
+
+../lib/dynbuf.h:
+
+../lib/mime.h:
+
+../lib/imap.h:
+
+../lib/pingpong.h:
+
+../lib/curl_sasl.h:
+
+../lib/bufref.h:
+
+../lib/pop3.h:
+
+../lib/smtp.h:
+
+../lib/ftp.h:
+
+../lib/file.h:
+
+../lib/vssh/ssh.h:
+
+../lib/http.h:
+
+../lib/rtsp.h:
+
+../lib/smb.h:
+
+../lib/mqtt.h:
+
+../lib/wildcard.h:
+
+../lib/multihandle.h:
+
+../lib/conncache.h:
+
+../lib/socketpair.h:
+
+../lib/quic.h:
+
+../lib/c-hyper.h:
+
+../lib/sendf.h:
+
+../lib/rand.h:
+
+../lib/share.h:
+
+../lib/url.h:
+
+../lib/inet_ntop.h:
+
+../lib/inet_pton.h:
+
+../lib/multiif.h:
+
+../lib/doh.h:
+
+../lib/warnless.h:
+
+../lib/strcase.h:
+
+../lib/curl_printf.h:
+
+../include/curl/mprintf.h:
+
+../lib/curl_memory.h:
+
+../lib/memdebug.h:
